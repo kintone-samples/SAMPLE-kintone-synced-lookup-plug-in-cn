@@ -1,0 +1,26 @@
+{
+  "manifest_version": 1,
+  "version": 1,
+  "type": "APP",
+  "desktop": {
+    "js": ["https://cdn.jsdelivr.net/npm/vue@3.2.23", "$desktop"],
+    "css": ["css/51-modern-default.css", "$desktop"]
+  },
+  "icon": "image/icon.png",
+  "config": {
+    "html": "html/config.html",
+    "js": ["https://cdn.jsdelivr.net/npm/vue@3.2.23", "$config"],
+    "css": ["css/51-modern-default.css", "$config"],
+    "required_params": ["setting"]
+  },
+  "name": {
+    "en": "kintone-synced-lookup",
+    "ja": "キントーン同期ルークアップ",
+    "zh": "kintone同步lookup"
+  },
+  "description": {
+    "en": "kintone-lookup-research",
+    "ja": "キントーン同期ルークアップ",
+    "zh": "kintone同步lookup"
+  }
+}

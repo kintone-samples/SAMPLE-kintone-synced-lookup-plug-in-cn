@@ -1,0 +1,96 @@
+.settings-heading {
+  font-size: 1.8em;
+}
+
+.config-check-box {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.config-row {
+  height: 4.6em;
+}
+
+.lookup-field-name-text-parent {
+  position: relative;
+  top: -0.64em;
+  margin-left: 1.2em;
+}
+
+.lookup-field-name-text {
+  font-size: 1.5em;
+}
+
+.toggle-wrapper {
+  overflow: hidden;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.toggle-wrapper input {
+  position: absolute;
+  left: -99em;
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 50px;
+  background: #d21626;
+  border-radius: 5px;
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.toggle::before,
+.toggle::after {
+  position: absolute;
+  line-height: 50px;
+  font-size: 14px;
+  z-index: 2;
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.toggle::before {
+  content: 'OFF';
+  left: 20px;
+  color: #d21626;
+}
+
+.toggle::after {
+  content: 'ON';
+  right: 20px;
+  color: #fff;
+}
+
+.toggle-handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  width: 65px;
+  height: 44px;
+  border-radius: 3px;
+  top: 3px;
+  left: 3px;
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transform: translateX(0);
+}
+
+input:checked + .toggle {
+  background: #66b317;
+}
+
+input:checked + .toggle::before {
+  color: #fff;
+}
+
+input:checked + .toggle::after {
+  color: #66b317;
+}
+
+input:checked + .toggle .toggle-handler {
+  width: 54px;
+  transform: translateX(60px);
+  border-color: #fff;
+}
